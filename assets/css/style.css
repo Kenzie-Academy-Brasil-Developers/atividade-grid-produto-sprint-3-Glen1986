@@ -70,12 +70,13 @@ header{
     }
     header .col-flex.logo h1{
        color: #fff;
+       margin-left:2rem;
     }
     header .col-flex.menu{
 
     }
         header .col-flex.menu ul{
-            display: flex;
+            display: none;
         }
             header .col-flex.menu ul li{
                
@@ -95,7 +96,17 @@ header{
                     color:#000;
                     transition: 0.1s;
                 }
-
+                header div.menuMobil{
+                    display:flex;
+                    position:relative;
+                    color:#ffffff;
+                }
+                header div.menuMobil i.fa-bars{
+                    font-size:2rem;
+                    position: fixed;
+                    top:2rem;
+                    right:2rem;
+                }
 
 main.container, .lanca {
     margin-top:6rem;
@@ -200,10 +211,13 @@ button.produto_adicionar_carrinho{
 }
 ul.produtos_lista{
     display: flex;
-    justify-content: space-between;
-
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
-
+h3{
+    text-align:center;
+}
 
 /* EXTRAS */
 
@@ -221,5 +235,54 @@ ul.produtos_lista{
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {
+
+    .container-flex{
+        display: flex;
+        align-items: center;
+    }
+    header .col-flex.logo{
+        width: 240px;
+    }
+    header .col-flex.logo h1{
+       color: #fff;
+    }
+    header .col-flex.menu{
+
+    }
+        header .col-flex.menu ul{
+            display: flex;
+        }
+            header .col-flex.menu ul li{
+               
+            }
+                header .col-flex.menu ul li a{ 
+                  color: #fff;
+                  text-decoration: none;
+                  padding: 10px 20px;
+                  font-size: 18px;
+                }
+                header .col-flex.menu ul li:last-child a{
+                    background-color:#39b700;
+                    text-transform: uppercase;
+                }
+                header .col-flex.menu ul li a:hover{
+                    background-color: #fff;
+                    color:#000;
+                    transition: 0.1s;
+                }
+                header div.menuMobil{
+                    display:none;
+                }
+
+ul.produtos_lista{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+
+}
+h3 {
+    text-align:start;
+    }
+}
 /* MEDIA QUERIES */
