@@ -95,7 +95,104 @@ header{
                     color:#000;
                     transition: 0.1s;
                 }
-    
+
+   
+ li.produto{
+    background: rgb(255, 255, 255);
+    width: 296px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 6px;
+    padding: 15px 15px 65px 15px;
+    position: relative;
+}
+ span.produto_desconto{
+    background-color: #39b701;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    float: right;
+}
+ul.produtos_lista figure img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+figcaption{
+    display:none;
+}
+.produtos .produtos_lista h2{
+    font-size: 16px;
+    font-weight: 100;
+    color: #535353;
+}
+div.produto_avaliacao span{
+    display: inline-block;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: calc(10px/2) solid transparent;
+    border-right: calc(10px/2) solid transparent;
+    border-bottom: 10px solid #666666;
+    top: calc(10px/-6);
+
+}
+div.produto_avaliacao span::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: calc(10px/2) solid transparent;
+    border-right: calc(10px/2) solid transparent;
+    border-top: 10px solid #666666;
+    top: calc(10px/3);
+    left: calc(10px/-2);
+
+}
+/************
+ *
+ *
+ *
+ * ********/
+div.produto_preco span{
+    display: block;
+    font-weight: bold;
+    color: #535353;
+    text-decoration: line-through;
+    font-size: 13px;
+
+}
+div.produto_preco strong{
+    font-size: 20px;
+    margin: 4px 0 6px;
+    display: block;
+}
+
+div.produto_preco p{
+    color: #535353;
+    font-size: 13px;
+
+}
+button.produto_adicionar_carrinho{
+    display: block;
+    width: 90%;
+    height: 40px;
+    border: none;
+    background-color: #39b701;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 auto;
+    font-weight: 600;
+    position: absolute;
+    bottom: 10px;
+    cursor: pointer;
+
+}
+ul.produtos_lista{
+    display: flex;
+    justify-content: space-between;
+
+}
+
 
 /* EXTRAS */
 
