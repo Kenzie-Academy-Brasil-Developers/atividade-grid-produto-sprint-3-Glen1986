@@ -71,6 +71,7 @@ header{
     header .col-flex.logo h1{
        color: #fff;
        margin-left:2rem;
+       cursor:pointer;
     }
     header .col-flex.menu{
 
@@ -106,6 +107,7 @@ header{
                     position: fixed;
                     top:2rem;
                     right:2rem;
+                    cursor:pointer;
                 }
 
 main.container, .lanca {
