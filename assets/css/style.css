@@ -96,7 +96,10 @@ header{
                     transition: 0.1s;
                 }
 
-   
+
+main.container, .lanca {
+    margin-top:6rem;
+}
  li.produto{
     background: rgb(255, 255, 255);
     width: 296px;
@@ -149,10 +152,18 @@ div.produto_avaliacao span::before{
 
 }
 /************
- *
- *
- *
- * ********/
+ */
+div.produto_avaliacao span.ativo{
+    border-left: calc(10px/2) solid transparent;
+    border-right: calc(10px/2) solid transparent;
+    border-bottom: 10px solid #f2c832;
+ }
+div.produto_avaliacao span.ativo::before{
+    border-left: calc(10px/2) solid transparent;
+    border-right: calc(10px/2) solid transparent;
+    border-top: 10px solid #f2c832;
+}
+ 
 div.produto_preco span{
     display: block;
     font-weight: bold;
